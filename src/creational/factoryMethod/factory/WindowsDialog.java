@@ -1,4 +1,4 @@
-package creational.factoryMethod.dialog;
+package creational.factoryMethod.factory;
 
 import creational.factoryMethod.button.Button;
 import creational.factoryMethod.button.WindowsButton;

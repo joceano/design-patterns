@@ -1,8 +1,8 @@
 package creational.factoryMethod;
 
-import creational.factoryMethod.dialog.Dialog;
-import creational.factoryMethod.dialog.HtmlDialog;
-import creational.factoryMethod.dialog.WindowsDialog;
+import creational.factoryMethod.factory.Dialog;
+import creational.factoryMethod.factory.HtmlDialog;
+import creational.factoryMethod.factory.WindowsDialog;
 
 public class Demo {
 

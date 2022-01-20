@@ -2,12 +2,12 @@ package creational.builder;
 
 public class FrameworkFullBuilder implements FrameworkBuilderInterface {
 
-    private Framework framework;
+    private final Framework framework;
 
     public FrameworkFullBuilder() {
         this.framework = new Framework();
         this.buildName();
-        this.buildDb();;
+        this.buildDb();
         this.buildWebPack();
         this.buildTests();
         this.buildFull();

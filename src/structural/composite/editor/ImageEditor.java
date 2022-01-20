@@ -11,8 +11,8 @@ import java.awt.event.MouseEvent;
 
 public class ImageEditor {
 
-    private EditorCanvas canvas;
-    private CompoundShape allShapes = new CompoundShape();
+    private final EditorCanvas canvas;
+    private final CompoundShape allShapes = new CompoundShape();
 
     public ImageEditor() {
         canvas = new EditorCanvas();

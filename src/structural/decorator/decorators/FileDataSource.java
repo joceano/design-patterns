@@ -4,7 +4,7 @@ import java.io.*;
 
 public class FileDataSource implements DataSource {
 
-    private String name;
+    private final String name;
 
     public FileDataSource(String name) {
         this.name = name;

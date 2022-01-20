@@ -62,7 +62,7 @@ public class CompressionDecorator extends DataSourceDecorator {
             in.close();
             iin.close();
             bout.close();
-            return new String(bout.toByteArray());
+            return bout.toString();
         } catch (IOException ex) {
             return null;
         }

@@ -10,8 +10,8 @@ import creational.abstractFactory.factory.GUIFactory;
  */
 public class Application {
 
-    private Button button;
-    private Checkbox checkbox;
+    private final Button button;
+    private final Checkbox checkbox;
 
     public Application(GUIFactory factory) {
         button = factory.createButton();

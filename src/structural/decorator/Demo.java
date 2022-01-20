@@ -1,22 +1,16 @@
 package structural.decorator;
 
-import structural.decorator.decorators.*;
-
 public class Demo {
 
     public static void main(String[] args) {
-        String salaryRecords = "Name,Salary\nJohn Smith,100000\nSteven Jobs,912000";
-        DataSourceDecorator encoded = new CompressionDecorator(
-                new EncryptionDecorator(
-                        new FileDataSource("out/OutputDemo.txt")));
-        encoded.writeData(salaryRecords);
-        DataSource plain = new FileDataSource("out/OutputDemo.txt");
 
-        System.out.println("- Input ----------------");
-        System.out.println(salaryRecords);
-        System.out.println("- Encoded --------------");
-        System.out.println(plain.readData());
-        System.out.println("- Decoded --------------");
-        System.out.println(encoded.readData());
+        Pao francesComSalame = new Frances();
+        francesComSalame = new Salame(francesComSalame);
+        System.out.println(francesComSalame.getNome() + " - R$ " + francesComSalame.valor());
+
+        Pao bagueteComCalabresaESalame = new Baguete();
+        bagueteComCalabresaESalame = new Calabresa(bagueteComCalabresaESalame);
+        bagueteComCalabresaESalame = new Salame(bagueteComCalabresaESalame);
+        System.out.println(bagueteComCalabresaESalame.getNome() + " - R$ " + bagueteComCalabresaESalame.valor());
     }
 }

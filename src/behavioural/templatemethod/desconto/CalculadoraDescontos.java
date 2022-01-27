@@ -1,4 +1,6 @@
-package behavioural.templatemethod;
+package behavioural.templatemethod.desconto;
+
+import behavioural.templatemethod.Orcamento;
 
 import java.math.BigDecimal;
 

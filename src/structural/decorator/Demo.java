@@ -8,6 +8,7 @@ public class Demo {
         francesComSalame = new Salame(francesComSalame);
         System.out.println(francesComSalame.getNome() + " - R$ " + francesComSalame.valor());
 
+        //decorator
         Pao bagueteComCalabresaESalame = new Baguete();
         bagueteComCalabresaESalame = new Calabresa(bagueteComCalabresaESalame);
         bagueteComCalabresaESalame = new Salame(bagueteComCalabresaESalame);

@@ -10,6 +10,7 @@ public class Demo {
         orcamento.aplicarDescontoExtra();
         System.out.println("Status: " + orcamento.getSituacao() + " - Valor: R$ " + orcamento.getValor());
 
+        //state
         orcamento.aprovar();
         orcamento.aplicarDescontoExtra();
         System.out.println("Status: " + orcamento.getSituacao() + " - Valor: R$ " + orcamento.getValor());

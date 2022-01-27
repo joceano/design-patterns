@@ -9,6 +9,7 @@ public class CalculadoraDeJuros {
     }
 
     public Double calculaJuros(Pedido pedido) {
+        //strategy
         return this.calculadorDeJuros.getTaxaDeJuros(pedido);
     }
 }

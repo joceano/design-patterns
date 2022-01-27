@@ -11,6 +11,7 @@ public class Demo {
         GeraPedido gerador = new GeraPedido("Ana da Silva", new BigDecimal("600"), 6);
 
         GeraPedidoHandler handler = new GeraPedidoHandler();
+        //command
         handler.executa(gerador);
     }
 }
